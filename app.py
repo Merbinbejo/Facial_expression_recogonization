@@ -2,6 +2,8 @@ import streamlit as st
 from ultralytics import YOLO
 from PIL import Image
 import numpy as np
+import os
+os.environ["OPENCV_VIDEOIO_PRIORITY_MSMF"] = "0"
 
 model=YOLO("model.pt")
 
@@ -146,3 +148,4 @@ with tab1:
                                             box-shadow:2px 2px 6px rgba(0,0,0,0.08);
                                             padding:6px 14px;"><h3 style="margin:4px 0;font-size:20px;font-weight:600;">The Image Shows : {name.upper()} expression</h3></div>
         """,unsafe_allow_html=True)
+
