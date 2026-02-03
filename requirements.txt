@@ -1,9 +1,5 @@
+streamlit==1.45.1
+ultralytics
 numpy==1.26.4
 Pillow==10.4.0
-streamlit==1.45.1
-ultralytics==8.4.9
-opencv-python-headless
-
-
-
-
+opencv-python-headless==4.9.0.80
